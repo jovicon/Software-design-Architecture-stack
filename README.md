@@ -1,1 +1,1 @@
-# typescript-design-patterns
+# The software Design & Architecture Stack
