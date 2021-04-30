@@ -60,7 +60,7 @@ abstract class MessageConnectorCreator {
   // internal business logic
   public someOperation(): string {
     const anotherMessageService = this.factoryMethod();
-            return `Creator: The same creator's code has just worked with ${anotherMessageService.send('something')}`;
+              return `Creator: The same creator's code has just worked with ${anotherMessageService.send('something')}`;
   }
 }
 
