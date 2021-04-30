@@ -50,6 +50,8 @@ console.log('');
 console.log('App: Launched with the ConcreteCreator2.');
 clientCode(new ConcreteCreator2());
 
+
+
 /**
  *  Uses Cases
  *  Multiple Message App
