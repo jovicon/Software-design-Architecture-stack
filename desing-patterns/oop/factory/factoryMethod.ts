@@ -50,8 +50,6 @@ console.log('');
 console.log('App: Launched with the ConcreteCreator2.');
 clientCode(new ConcreteCreator2());
 
-
-
 /**
  *  Uses Cases
  *  Multiple Message App
@@ -62,11 +60,12 @@ abstract class MessageConnectorCreator {
   // internal business logic
   public someOperation(): string {
     const anotherMessageService = this.factoryMethod();
-    return `Creator: The same creator's code has just worked with ${anotherMessageService.send('something')}`;
+            return `Creator: The same creator's code has just worked with ${anotherMessageService.send('something')}`;
   }
 }
 
 interface MessageConnector {
+  auth();
   status(id: number): string;
   send(message: string): string;
   shortUrl(): number;
@@ -89,13 +88,13 @@ class TwilioConnector implements MessageConnector {
   private static secretID: string = 'TwilioSecretId';
   private static token: string;
 
-  private static auth() {
+  auth() {
     // make api auth
     this.token = `${this.keyID} - ${this.secretID}`;
   }
 
   private static request() {
-    if (!this.token) this.auth();
+    if (!this.token) auth();
     // requests get or post exeution
   }
 
@@ -117,9 +116,9 @@ class SlackConnector implements MessageConnector {
   private static secretID: string = 'SlackSecretId';
   private static token: string;
 
-  private static auth() {
+  auth() {
     // make api auth
-    this.token = `${this.secretID} ----- ${this.keyID}`;
+    token = `${this.secretID} ----- ${this.keyID}`;
   }
 
   private static request() {
