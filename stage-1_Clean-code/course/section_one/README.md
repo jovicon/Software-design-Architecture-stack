@@ -15,52 +15,107 @@ because a vast majority of time we spend time reading and understanding code.
 That it's not one way to write clean code, we can dive and choose different styles and rules (FP, SP or OOP).
 
 **Typescript Code examples:**
+```typescript
+------------------------------------------------------
+Not Clean Code Course Example:
+------------------------------------------------------
+function create(m, n) {
+  if (m === 'Max') {
+    return (value) => value < number;
+  } 
+  else if (m === 'Min') {
+    return (value) => value > number;
+  } 
+}
 
+const max = create('Max', 31);
+
+console.log(isBellowMax(15))
+console.log(isBellowMax(32))
+```
+
+```typescript
+------------------------------------------------------
+Clean Code Course Example:
+------------------------------------------------------
+function createValidator(mode: 'Max' | 'Min', number: number) {
+  if (mode === 'Max') {
+    return (value: number) => value < number;
+  } 
+  else if (mode === 'Min') {
+    return (value: number) => value > number;
+  } 
+}
+
+const isBellowMax = createValidator('Max', 31);
+
+console.log(isBellowMax(15))
+console.log(isBellowMax(32))
+```
+
+```typescript
+------------------------------------------------------
+My Clean Code Example Refactor:
+------------------------------------------------------
+type validationModes = 'Greater' | 'Smaller';
+
+const createValidator = (mode: validationModes, pivotNumber: number) => {
+  return mode === 'Greater'
+    ? (numberToCompare: number) => numberToCompare > pivotNumber
+    : (numberToCompare: number) => numberToCompare < pivotNumber;
+}
+
+const maxNumber = 31;
+const isGreaterThanMax = createValidatorFunction('Greater', maxNumber);
+
+console.log(isGreaterThanMax(15));
+console.log(isGreaterThanMax(32));
+```
 
 ## Key Pain Points & How To Write Clean Code
 
 * Names
-    * Variables
-    * Functions
-    * Classes
+  * Variables
+  * Functions
+  * Classes
 
 * Structure & Comments
-    * Code Formatting
-    * Good & Bad comments
+  * Code Formatting
+  * Good & Bad comments
 
 * Functions
-    * Length
-    * Parameters
+  * Length
+  * Parameters
 
 * Conditionals & Error Handling
-    * Deep Nesting
-    * Missing Error Handling
+  * Deep Nesting
+  * Missing Error Handling
 
 * Classes & Data Structures
-    * Missing Distinction
-    * Bloated Classes
+  * Missing Distinction
+  * Bloated Classes
 
 * Solutions:
-    * Rules & Concepts
-    * Patterns & Principles
-    * Test-Driven Development
+  * Rules & Concepts
+  * Patterns & Principles
+  * Test-Driven Development
 
 
 ##  Clean Code & Strongly Typed Languages
 * Clean code Doesn't require Strong typing
-    * Types can help preventing errors and can improve readability
-    * But code can also be 100% readable and meaningful without types
+  * Types can help preventing errors and can improve readability
+  * But code can also be 100% readable and meaningful without types
 
 **Code example**
 
 
 ##  Clean Code, Principles & Patterns & Clean Architecture
 * Clean Code:
-    * Write code which is readable & easy to understand
-    * Focus on single problems/file
+  * Write code which is readable & easy to understand
+  * Focus on single problems/file
 
 * Pattern & Principles
-    * Write code which is maintainable and extensible
+  * Write code which is maintainable and extensible
 
 * Clean Architecture
     * Where to write which code
