@@ -57,16 +57,16 @@ console.log(isBellowMax(32))
 ------------------------------------------------------
 My Clean Code Example Refactor:
 ------------------------------------------------------
-type validationModes = 'Greater' | 'Smaller';
+type validatorModes = 'Greater' | 'Smaller';
 
-const createValidator = (mode: validationModes, pivotNumber: number) => {
+const createValidator = (mode: validatorModes, pivotNumber: number) => {
   return mode === 'Greater'
     ? (numberToCompare: number) => numberToCompare > pivotNumber
     : (numberToCompare: number) => numberToCompare < pivotNumber;
 }
 
 const maxNumber = 31;
-const isGreaterThanMax = createValidatorFunction('Greater', maxNumber);
+const isGreaterThanMax = createValidator('Greater', maxNumber);
 
 console.log(isGreaterThanMax(15));
 console.log(isGreaterThanMax(32));
@@ -118,8 +118,8 @@ console.log(isGreaterThanMax(32));
   * Write code which is maintainable and extensible
 
 * Clean Architecture
-    * Where to write which code
-    * Focus on the project as whole
+  * Where to write which code
+  * Focus on the project as whole
 
 
 ## Clean Code vs Quick Code
