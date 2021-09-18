@@ -30,8 +30,8 @@ function create(m, n) {
 
 const max = create('Max', 31);
 
-console.log(isBellowMax(15))
-console.log(isBellowMax(32))
+console.log(max(15))
+console.log(max(32))
 ```
 
 ```typescript
@@ -107,6 +107,24 @@ console.log(isGreaterThanMax(32));
   * But code can also be 100% readable and meaningful without types
 
 **Code example**
+```typescript
+------------------------------------------------------
+Clean Code Course Example:
+------------------------------------------------------
+function createValidator(mode: 'Max' | 'Min', number: number) {
+  if (mode === 'Max') {
+    return (value: number) => value < number;
+  } 
+  else if (mode === 'Min') {
+    return (value: number) => value > number;
+  } 
+}
+
+const isBellowMax = createValidator('Max', 31);
+
+console.log(isBellowMax(15))
+console.log(isBellowMax(32))
+```
 
 
 ##  Clean Code, Principles & Patterns & Clean Architecture
