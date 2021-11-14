@@ -174,7 +174,7 @@ console.log(isBellowMax(32))
 * Always question old code and refactor a lot.
 * Constant Refactor is the key.
 
-**Refactor today is work you save tomorrow**
+**Refactor today is work you save tomorrow**  
 **A code base can only survive and stay maintainable if it's continuously improved and refactored**
 
 ### PROTIP
