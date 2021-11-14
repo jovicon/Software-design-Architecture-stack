@@ -72,6 +72,33 @@ console.log(isGreaterThanMax(15));
 console.log(isGreaterThanMax(32));
 ```
 
+```typescript
+------------------------------------------------------
+Team Clean Code Example Refactor:
+------------------------------------------------------
+type type = 'Min' | 'Max' | 'Equal';
+
+const equal = (value: number, inValue: number) => value == inValue;
+
+const createValidator = (type: type, inValue: number): Function => {
+  const map = {
+    Min: (value: number) => value < inValue,
+    Max: (value: number) => value > inValue,
+    Equal: (value: number) => equal(value, inValue)
+  };
+
+  return map[type];
+}
+
+const isMax: Function = createValidator('Max', 30);
+console.log('', isMax(10));
+console.log('', isMax(31));
+
+const isEqual: Function = createValidator('Equal', 30);
+console.log('equal', isEqual(30));
+console.log('not equal', isEqual(31));
+```
+
 ## Key Pain Points & How To Write Clean Code
 
 * Names
