@@ -52,6 +52,10 @@ https://jestjs.io/docs/snapshot-testing
 
 * inline snapshots
 
+  - jest emotion
+
+* Jest watch
+
 # Playground
 
 - Prettier
@@ -64,6 +68,25 @@ https://jestjs.io/docs/snapshot-testing
 - https://www.npmjs.com/package/npm-run-all
 - https://github.com/keyz/identity-obj-proxy
 
+## Jest watch mode
+
+- https://github.com/jest-community/jest-watch-select-projects/blob/master/README.md
+- https://github.com/jest-community/jest-watch-typeahead
+
 # Configs
 
 - https://github.com/prettier/eslint-config-prettier
+
+## Jest coverage threshold
+
+- https://github.com/kentcdodds/jest-cypress-react-babel-webpack/blob/tjs/jest-15/jest.config.js
+
+## CI/CD
+
+- https://about.codecov.io/
+
+# Implement
+
+- https://github.com/kentcdodds/jest-cypress-react-babel-webpack/compare/tjs/jest-19...tjs/jest-20
+
+- https://github.com/kentcdodds/jest-cypress-react-babel-webpack/tree/tjs/jest-23
