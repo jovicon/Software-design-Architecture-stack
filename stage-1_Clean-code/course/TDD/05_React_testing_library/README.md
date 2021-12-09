@@ -47,3 +47,11 @@
 - https://testingjavascript.com/lessons/react-mock-react-transition-group-in-react-component-tests-with-jest-mock
 
 - https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/mock-component.js
+
+## video 18 - http request mock
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/http-jest-mock.js
+
+## video 19 - http request msw mock
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/46d2608caaa404476c9224cd136aea270a739e6d/src/__tests__/http-msw-mock.js
