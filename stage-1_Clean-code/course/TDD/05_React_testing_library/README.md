@@ -55,3 +55,67 @@
 ## video 19 - http request msw mock
 
 - https://github.com/kentcdodds/react-testing-library-course/blob/46d2608caaa404476c9224cd136aea270a739e6d/src/__tests__/http-msw-mock.js
+
+## video 22 - API CALLS REACT
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/tdd-03-api.js
+
+## video 23 - mocking react router
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/tdd-04-router-redirect.js
+
+## video 25 - generate data
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/tdd-06-generate-data.js
+
+## video 26 - test error
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/tdd-07-error-state.js
+
+## video 27 - test refactor
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/tdd-08-custom-render.js
+
+## video 31 - test redux
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/redux-01.js
+
+## video 33 - test redux pro
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/redux-03.js
+
+## video 34 - test custom hook
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/custom-hook-01.js
+
+## video 35 - test custom hook 2
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/custom-hook-02.js
+
+## video 36 - test custom hooks 3 -testing library
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/custom-hook-03.js
+
+## video 37 - rerender custom hooks
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/custom-hook-04.js
+
+## video 38 - test modals
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/portals.js
+
+## video 39 - countdown test
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/unmounting.js
+
+## video 40 - integration test
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/app-01.js
+
+## video 41 - integration test Async
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/app-02.js
+
+## video 42 - user mock to integration tests
+
+- https://github.com/kentcdodds/react-testing-library-course/blob/tjs/src/__tests__/app-03.js
