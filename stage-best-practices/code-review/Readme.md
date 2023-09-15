@@ -55,3 +55,7 @@ Rules:
 ### Typescript Follows
 
 - <https://basarat.gitbook.io/typescript>
+
+### Typescript Good code to follow
+
+- <https://www.udemy.com/course/typescript-for-professionals/?referralCode=6EAA891A31A56E169625>
